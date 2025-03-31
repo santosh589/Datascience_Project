@@ -148,3 +148,136 @@ x==========x]
 [2025-03-31 14:42:12,605: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
 
 x==========x]
+[2025-03-31 15:42:38,088: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-31 15:42:38,091: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-31 15:42:38,098: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-31 15:42:38,101: INFO: common: created directory at: artifacts]
+[2025-03-31 15:42:38,103: INFO: common: created directory at: artifacts/model_trainer]
+[2025-03-31 15:55:14,581: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-03-31 15:55:14,590: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-31 15:55:14,591: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-31 15:55:14,593: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-31 15:55:14,594: INFO: common: created directory at: artifacts]
+[2025-03-31 15:55:14,594: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-31 15:55:14,595: INFO: data_ingestion: File already exists]
+[2025-03-31 15:55:14,606: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-03-31 15:55:14,607: INFO: main: >>>>>> stage Data Validation Stage started <<<<<<]
+[2025-03-31 15:55:14,610: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-31 15:55:14,612: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-31 15:55:14,615: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-31 15:55:14,617: INFO: common: created directory at: artifacts]
+[2025-03-31 15:55:14,618: INFO: common: created directory at: artifacts/data_validation]
+[2025-03-31 15:55:14,637: INFO: main: >>>>>> stage Data Validation Stage completed <<<<<<
+
+x==========x]
+[2025-03-31 15:55:14,638: INFO: main: >>>>>> stage Data Transformation Stage started <<<<<<]
+[2025-03-31 15:55:14,642: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-31 15:55:14,643: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-31 15:55:14,646: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-31 15:55:14,647: INFO: common: created directory at: artifacts]
+[2025-03-31 15:55:14,650: INFO: common: created directory at: artifacts/data_transformation]
+[2025-03-31 15:55:14,682: INFO: data_transformation: Splited data into training and test sets]
+[2025-03-31 15:55:14,683: INFO: data_transformation: (1199, 12)]
+[2025-03-31 15:55:14,684: INFO: data_transformation: (400, 12)]
+[2025-03-31 15:55:14,686: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
+
+x==========x]
+[2025-03-31 15:55:14,686: INFO: main: >>>>>> stage Model Training Stage started <<<<<<]
+[2025-03-31 15:55:14,690: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-31 15:55:14,691: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-31 15:55:14,694: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-31 15:55:14,695: INFO: common: created directory at: artifacts]
+[2025-03-31 15:55:14,695: INFO: common: created directory at: artifacts/data_validation]
+[2025-03-31 15:55:14,696: ERROR: main: 'ModelTrainer' object has no attribute 'validate_all_columns']
+Traceback (most recent call last):
+  File "C:\ML_OPS\DataScience_Project\Datascience_Project\main.py", line 49, in <module>
+    obj.initiate_model_training()
+  File "C:\ML_OPS\DataScience_Project\Datascience_Project\src\DataScience\pipeline\model_trainer_pipeline.py", line 17, in initiate_model_training
+    data_validation.validate_all_columns()
+AttributeError: 'ModelTrainer' object has no attribute 'validate_all_columns'
+[2025-03-31 15:58:13,284: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-03-31 15:58:13,284: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-31 15:58:13,284: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-31 15:58:13,284: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-31 15:58:13,284: INFO: common: created directory at: artifacts]
+[2025-03-31 15:58:13,284: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-31 15:58:13,284: INFO: data_ingestion: File already exists]
+[2025-03-31 15:58:13,296: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-03-31 15:58:13,297: INFO: main: >>>>>> stage Data Validation Stage started <<<<<<]
+[2025-03-31 15:58:13,302: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-31 15:58:13,303: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-31 15:58:13,305: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-31 15:58:13,305: INFO: common: created directory at: artifacts]
+[2025-03-31 15:58:13,305: INFO: common: created directory at: artifacts/data_validation]
+[2025-03-31 15:58:13,324: INFO: main: >>>>>> stage Data Validation Stage completed <<<<<<
+
+x==========x]
+[2025-03-31 15:58:13,325: INFO: main: >>>>>> stage Data Transformation Stage started <<<<<<]
+[2025-03-31 15:58:13,328: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-31 15:58:13,330: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-31 15:58:13,334: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-31 15:58:13,335: INFO: common: created directory at: artifacts]
+[2025-03-31 15:58:13,335: INFO: common: created directory at: artifacts/data_transformation]
+[2025-03-31 15:58:13,359: INFO: data_transformation: Splited data into training and test sets]
+[2025-03-31 15:58:13,360: INFO: data_transformation: (1199, 12)]
+[2025-03-31 15:58:13,360: INFO: data_transformation: (400, 12)]
+[2025-03-31 15:58:13,361: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
+
+x==========x]
+[2025-03-31 15:58:13,362: INFO: main: >>>>>> stage Model Training Stage started <<<<<<]
+[2025-03-31 15:58:13,366: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-31 15:58:13,367: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-31 15:58:13,369: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-31 15:58:13,370: INFO: common: created directory at: artifacts]
+[2025-03-31 15:58:13,371: INFO: common: created directory at: artifacts/model_trainer]
+[2025-03-31 15:58:13,373: ERROR: main: 'ModelTrainer' object has no attribute 'validate_all_columns']
+Traceback (most recent call last):
+  File "C:\ML_OPS\DataScience_Project\Datascience_Project\main.py", line 49, in <module>
+    obj.initiate_model_training()
+  File "C:\ML_OPS\DataScience_Project\Datascience_Project\src\DataScience\pipeline\model_trainer_pipeline.py", line 17, in initiate_model_training
+    data_validation.validate_all_columns()
+AttributeError: 'ModelTrainer' object has no attribute 'validate_all_columns'
+[2025-03-31 16:02:40,059: INFO: main: >>>>>> stage Data Ingestion Stage started <<<<<<]
+[2025-03-31 16:02:40,062: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-31 16:02:40,064: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-31 16:02:40,066: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-31 16:02:40,066: INFO: common: created directory at: artifacts]
+[2025-03-31 16:02:40,067: INFO: common: created directory at: artifacts/data_ingestion]
+[2025-03-31 16:02:40,067: INFO: data_ingestion: File already exists]
+[2025-03-31 16:02:40,074: INFO: main: >>>>>> stage Data Ingestion Stage completed <<<<<<
+
+x==========x]
+[2025-03-31 16:02:40,074: INFO: main: >>>>>> stage Data Validation Stage started <<<<<<]
+[2025-03-31 16:02:40,077: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-31 16:02:40,078: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-31 16:02:40,082: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-31 16:02:40,082: INFO: common: created directory at: artifacts]
+[2025-03-31 16:02:40,082: INFO: common: created directory at: artifacts/data_validation]
+[2025-03-31 16:02:40,101: INFO: main: >>>>>> stage Data Validation Stage completed <<<<<<
+
+x==========x]
+[2025-03-31 16:02:40,103: INFO: main: >>>>>> stage Data Transformation Stage started <<<<<<]
+[2025-03-31 16:02:40,111: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-31 16:02:40,112: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-31 16:02:40,114: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-31 16:02:40,115: INFO: common: created directory at: artifacts]
+[2025-03-31 16:02:40,115: INFO: common: created directory at: artifacts/data_transformation]
+[2025-03-31 16:02:40,152: INFO: data_transformation: Splited data into training and test sets]
+[2025-03-31 16:02:40,152: INFO: data_transformation: (1199, 12)]
+[2025-03-31 16:02:40,153: INFO: data_transformation: (400, 12)]
+[2025-03-31 16:02:40,156: INFO: main: >>>>>> stage Data Transformation Stage completed <<<<<<
+
+x==========x]
+[2025-03-31 16:02:40,159: INFO: main: >>>>>> stage Model Training Stage started <<<<<<]
+[2025-03-31 16:02:40,163: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2025-03-31 16:02:40,165: INFO: common: yaml file: params.yaml loaded successfully]
+[2025-03-31 16:02:40,168: INFO: common: yaml file: schema.yaml loaded successfully]
+[2025-03-31 16:02:40,168: INFO: common: created directory at: artifacts]
+[2025-03-31 16:02:40,170: INFO: common: created directory at: artifacts/model_trainer]
+[2025-03-31 16:02:40,193: INFO: main: >>>>>> stage Model Training Stage completed <<<<<<
+
+x==========x]
